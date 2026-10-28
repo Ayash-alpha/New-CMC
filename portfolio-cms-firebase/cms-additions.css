@@ -1,0 +1,83 @@
+/* ============================================================
+   CMS ADDITIONS — load this AFTER style.css in index.html.
+   Purely additive: new Tools & Platforms section + a bento-grid
+   treatment for Services/Portfolio (GridX-inspired), plus extra
+   responsive refinement. Doesn't touch any existing selector.
+   Uses the same design tokens already defined in style.css
+   (--surface, --border, --radius-md, --accent, --highlight …).
+   ============================================================ */
+
+/* ---------- TOOLS & PLATFORMS ---------- */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.tool-badge {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 16px);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: transform .35s var(--ease, ease), border-color .35s ease, background .35s ease;
+}
+.tool-badge:hover {
+  transform: translateY(-4px);
+  border-color: var(--highlight);
+  background: var(--surface-strong);
+}
+.tool-name { font-weight: 600; font-size: 0.95rem; }
+.tool-category { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-faint); }
+
+@media (max-width: 860px) {
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .tools-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- BENTO-GRID TREATMENT (GridX-inspired) ---------- */
+/* Services: first and a mid card run wider, like a bento board */
+@media (min-width: 860px) {
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  .services-grid .service-card:nth-child(1) { grid-column: span 2; }
+  .services-grid .service-card:nth-child(6) { grid-column: span 2; }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    grid-auto-rows: 1fr;
+  }
+  .portfolio-grid .portfolio-card:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .portfolio-grid .portfolio-card:nth-child(1) .portfolio-thumb,
+  .portfolio-grid .portfolio-card:nth-child(1) .thumb-photo {
+    min-height: 220px;
+  }
+}
+
+/* ---------- EXPERIENCE ORG LINE (new field) ---------- */
+.timeline-card .timeline-org {
+  font-size: 0.82rem;
+  color: var(--highlight);
+  margin: 2px 0 8px;
+  font-weight: 600;
+}
+
+/* ---------- EXTRA RESPONSIVE SAFETY NET ---------- */
+@media (max-width: 400px) {
+  .container { padding: 0 18px; }
+  .hero-title { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+  .section-title { font-size: clamp(1.4rem, 7vw, 1.9rem); }
+  .btn { width: 100%; justify-content: center; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+}

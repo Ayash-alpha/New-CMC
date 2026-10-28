@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Mohamed Ayas Portfolio</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- ============ LOGIN ============ -->
+  <div id="loginScreen">
+    <form class="login-box" id="loginForm">
+      <h1>Portfolio <span class="brand">Admin</span></h1>
+      <p>Sign in to edit your site's content.</p>
+      <div class="field">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn btn-primary" id="loginBtn">Sign In</button>
+      <p class="error-msg" id="loginError"></p>
+    </form>
+  </div>
+
+  <!-- ============ EDITOR ============ -->
+  <div id="editorScreen">
+    <div class="admin-topbar">
+      <div><strong>Content Editor</strong> <span class="who" id="whoAmI"></span></div>
+      <div class="admin-topbar-actions">
+        <span class="status-msg" id="statusMsg"></span>
+        <button class="btn btn-ghost btn-sm" id="reloadBtn" type="button">Reload live content</button>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">Sign out</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="note-box">
+        Changes only go live on the site after you press <strong>Save &amp; Publish</strong> at the bottom
+        of this page. Visitors with an older cached copy see the update within a few seconds.
+      </div>
+
+      <!-- Site info -->
+      <section class="admin-section">
+        <h2>Site Info</h2>
+        <div class="row2">
+          <div class="field"><label>Name</label><input id="siteName"></div>
+          <div class="field"><label>Tagline</label><input id="siteTagline"></div>
+          <div class="field"><label>Email</label><input id="siteEmail" type="email"></div>
+          <div class="field"><label>Phone (displayed)</label><input id="sitePhone"></div>
+          <div class="field"><label>Phone (tel: link, digits only, e.g. +94764177123)</label><input id="sitePhoneHref"></div>
+          <div class="field"><label>Location</label><input id="siteLocation"></div>
+        </div>
+      </section>
+
+      <!-- Hero stats -->
+      <section class="admin-section">
+        <h2>Hero Stats <button type="button" class="btn btn-ghost btn-sm" data-add="hero.stats">+ Add stat</button></h2>
+        <p class="hint">The four counters at the top of the homepage.</p>
+        <div id="list-hero-stats"></div>
+      </section>
+
+      <!-- Skills -->
+      <section class="admin-section">
+        <h2>Skills <button type="button" class="btn btn-ghost btn-sm" data-add="skills">+ Add skill</button></h2>
+        <div id="list-skills"></div>
+      </section>
+
+      <!-- Tools -->
+      <section class="admin-section">
+        <h2>Tools &amp; Platforms <button type="button" class="btn btn-ghost btn-sm" data-add="tools">+ Add tool</button></h2>
+        <div id="list-tools"></div>
+      </section>
+
+      <!-- Services -->
+      <section class="admin-section">
+        <h2>Services <button type="button" class="btn btn-ghost btn-sm" data-add="services">+ Add service</button></h2>
+        <div id="list-services"></div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="admin-section">
+        <h2>Portfolio Projects <button type="button" class="btn btn-ghost btn-sm" data-add="portfolio">+ Add project</button></h2>
+        <p class="hint">Category must be one of: marketing, design, video, web. Upload an image or leave blank for an icon tile.</p>
+        <div id="list-portfolio"></div>
+      </section>
+
+      <!-- Experience -->
+      <section class="admin-section">
+        <h2>Experience <button type="button" class="btn btn-ghost btn-sm" data-add="experience">+ Add role</button></h2>
+        <div id="list-experience"></div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="admin-section">
+        <h2>Testimonials <button type="button" class="btn btn-ghost btn-sm" data-add="testimonials">+ Add testimonial</button></h2>
+        <div id="list-testimonials"></div>
+      </section>
+
+      <!-- Achievements -->
+      <section class="admin-section">
+        <h2>Achievements <button type="button" class="btn btn-ghost btn-sm" data-add="achievements">+ Add stat</button></h2>
+        <div id="list-achievements"></div>
+      </section>
+
+      <!-- Social -->
+      <section class="admin-section">
+        <h2>Social Links</h2>
+        <div class="row2">
+          <div class="field"><label>LinkedIn URL</label><input id="socialLinkedin"></div>
+          <div class="field"><label>Facebook URL</label><input id="socialFacebook"></div>
+          <div class="field"><label>Instagram URL</label><input id="socialInstagram"></div>
+          <div class="field"><label>WhatsApp link (e.g. https://wa.me/94764177123)</label><input id="socialWhatsapp"></div>
+          <div class="field"><label>Behance URL</label><input id="socialBehance"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="save-bar">
+      <span class="status-msg" id="statusMsgBottom"></span>
+      <button class="btn btn-primary" id="saveBtn" type="button">Save &amp; Publish</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs (compat build — no bundler/build step needed) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-storage-compat.js"></script>
+  <script src="../firebase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

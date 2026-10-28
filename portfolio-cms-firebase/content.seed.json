@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "Mohamed Ayas",
+    "tagline": "Digital Marketing Executive & Brand Strategist",
+    "email": "ayashfa01@gmail.com",
+    "phone": "+94 76 417 7123",
+    "phoneHref": "+94764177123",
+    "location": "Sri Lanka"
+  },
+
+  "hero": {
+    "stats": [
+      { "count": 4, "suffix": "+", "label": "Brands Managed" },
+      { "count": 100, "suffix": "+", "label": "Campaigns Executed" },
+      { "count": 1000, "suffix": "+", "label": "Leads Generated" },
+      { "count": 5, "suffix": "+", "label": "Major Projects" }
+    ]
+  },
+
+  "skills": [
+    { "name": "Digital Marketing", "pct": 96 },
+    { "name": "Meta Ads", "pct": 94 },
+    { "name": "Google Ads", "pct": 90 },
+    { "name": "Social Media Management", "pct": 95 },
+    { "name": "Graphic Design", "pct": 88 },
+    { "name": "Video Editing", "pct": 85 },
+    { "name": "Web Design", "pct": 87 },
+    { "name": "Web Development", "pct": 82 },
+    { "name": "SEO", "pct": 86 },
+    { "name": "Lead Generation", "pct": 93 },
+    { "name": "Content Strategy", "pct": 89 },
+    { "name": "Market Research", "pct": 91 },
+    { "name": "AI Tools", "pct": 90 },
+    { "name": "Team Management", "pct": 88 }
+  ],
+
+  "tools": [
+    { "name": "Meta Ads Manager", "category": "Advertising" },
+    { "name": "Google Ads", "category": "Advertising" },
+    { "name": "Google Analytics", "category": "Advertising" },
+    { "name": "Meta Business Suite", "category": "Advertising" },
+    { "name": "Canva", "category": "Design" },
+    { "name": "Adobe Photoshop", "category": "Design" },
+    { "name": "Adobe Premiere Pro", "category": "Design" },
+    { "name": "Figma", "category": "Design" },
+    { "name": "CapCut", "category": "Design" },
+    { "name": "WordPress", "category": "Development" },
+    { "name": "HTML / CSS / JavaScript", "category": "Development" },
+    { "name": "Netlify", "category": "Development" },
+    { "name": "ChatGPT / Claude", "category": "AI & Productivity" },
+    { "name": "Google Workspace", "category": "AI & Productivity" },
+    { "name": "Notion", "category": "AI & Productivity" },
+    { "name": "Semrush", "category": "AI & Productivity" }
+  ],
+
+  "services": [
+    { "title": "Digital Marketing Strategy", "desc": "Full-funnel strategy connecting brand goals to channel plans, budgets and KPIs." },
+    { "title": "Meta Ads Management", "desc": "Facebook & Instagram campaigns built around audience testing and creative iteration." },
+    { "title": "Google Ads Campaigns", "desc": "Search, display and shopping campaigns engineered for intent-driven conversions." },
+    { "title": "Social Media Management", "desc": "Content calendars, community management and platform-native storytelling." },
+    { "title": "Graphic Design", "desc": "Brand identity, social creatives and campaign assets with a consistent visual language." },
+    { "title": "Video Production", "desc": "Short-form and campaign video edited for retention on every major platform." },
+    { "title": "Web Design", "desc": "Interfaces designed around clarity, hierarchy and conversion — not decoration." },
+    { "title": "Website Development", "desc": "Fast, responsive builds — from landing pages to full custom sites." },
+    { "title": "Lead Generation", "desc": "Funnels and forms engineered to capture and qualify demand at scale." },
+    { "title": "Marketing Consultation", "desc": "Audits and roadmaps for teams who need a second, expert set of eyes." }
+  ],
+
+  "portfolio": [
+    { "category": "marketing", "title": "Retail Brand Growth Campaign", "desc": "A multi-platform Meta & Google Ads push for a retail brand, combining audience testing with weekly creative refreshes to keep cost-per-lead low as spend scaled.", "cardText": "Meta & Google Ads strategy that scaled qualified leads quarter over quarter.", "tags": "Meta Ads, Google Ads, Strategy", "image": "" },
+    { "category": "design", "title": "Brand Identity System", "desc": "A complete visual identity refresh — logo system, color palette, typography and a social creative kit — built to stay consistent across every customer touchpoint.", "cardText": "End-to-end visual identity and creative kit for a growing consumer brand.", "tags": "Branding, Graphic Design", "image": "" },
+    { "category": "video", "title": "Product Launch Video Series", "desc": "A short-form video series cut for Reels, TikTok and Shorts, each edited to a platform-specific pacing model to hold attention through the first three seconds.", "cardText": "Short-form video set engineered for retention across three platforms.", "tags": "Video Editing, Social Content", "image": "assets/portfolio-video.jpg" },
+    { "category": "web", "title": "Corporate Website Rebuild", "desc": "A ground-up rebuild of a corporate site focused on load speed, mobile usability and a clearer path from homepage to contact form.", "cardText": "Faster, mobile-first rebuild with a streamlined conversion path.", "tags": "Web Design, Web Development", "image": "" },
+    { "category": "marketing", "title": "Lead Generation Funnel", "desc": "A landing-page-to-CRM funnel built for a service business, pairing targeted ad creative with a qualifying form to filter for sales-ready leads only.", "cardText": "End-to-end funnel that filtered traffic down to sales-ready leads.", "tags": "Lead Generation, Paid Media", "image": "" },
+    { "category": "design", "title": "Social Campaign Creative Kit", "desc": "A modular set of social templates allowing the in-house team to publish on-brand creative daily without waiting on a designer for every post.", "cardText": "Modular template system for fast, on-brand daily publishing.", "tags": "Graphic Design, Templates", "image": "" }
+  ],
+
+  "experience": [
+    { "period": "Current", "title": "Digital Marketing Officer", "org": "Alpha Health Group, Colombo", "desc": "Managing end-to-end digital marketing across four sub-company profiles — lead generation, campaign KPIs, and cross-team creative coordination." },
+    { "period": "2023", "title": "Marketing Manager", "org": "Graphigram (Freelance)", "desc": "Delivered 5+ marketing and design projects across combined roles — strategist, designer, social media manager and editor for multiple clients." },
+    { "period": "2024", "title": "IT & Media Officer", "org": "NCC Construction Company, Eravur", "desc": "Managed marketing and media operations, including social strategy, content creation and media team supervision." },
+    { "period": "2023 – 2024", "title": "English Teacher", "org": "BT/BC/Alighar National School", "desc": "Built the communication and presentation foundation that still shapes how I write campaigns, pitch strategy and lead teams today." }
+  ],
+
+  "testimonials": [
+    { "quote": "Ayas rebuilt our ad strategy from the ground up and our cost per lead dropped within the first month. He treats every campaign like it's his own budget.", "author": "Founder", "org": "E-commerce Brand" },
+    { "quote": "What stood out was how he connected design, video and ad spend into one consistent story. Our brand finally feels like one brand across every channel.", "author": "Marketing Lead", "org": "Retail Business" },
+    { "quote": "He doesn't just run ads, he explains the why behind every decision. That made it easy to trust the strategy and stay the course through testing.", "author": "Operations Director", "org": "Service Company" }
+  ],
+
+  "achievements": [
+    { "count": 5, "suffix": "+", "label": "Projects Completed" },
+    { "count": 100, "suffix": "+", "label": "Campaigns Managed" },
+    { "count": 1000, "suffix": "+", "label": "Leads Generated" },
+    { "count": 4, "suffix": "+", "label": "Satisfied Clients" }
+  ],
+
+  "social": {
+    "linkedin": "#",
+    "facebook": "#",
+    "instagram": "#",
+    "whatsapp": "#",
+    "behance": "#"
+  }
+}
